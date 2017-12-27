@@ -6,15 +6,56 @@
 
     <groupId>com.yazuo.intelligent</groupId>
     <artifactId>dependencies</artifactId>
-    <description>小雅CRM非springboot依赖一管理</description>
     <version>CRM.S0</version>
     <packaging>pom</packaging>
- <dependencyManagement>
+    <description>小雅CRM非springboot依赖一管理</description>
+
+    <dependencyManagement>
      <dependencies>
          <dependency>
              <groupId>com.github.pagehelper</groupId>
              <artifactId>pagehelper</artifactId>
              <version>5.1.2</version>
+         </dependency>
+         <dependency>
+             <groupId>org.postgresql</groupId>
+             <artifactId>postgresql</artifactId>
+             <version>9.4-1204-jdbc41</version>
+         </dependency>
+         <dependency>
+             <groupId>tk.mybatis</groupId>
+             <artifactId>mapper</artifactId>
+             <version>3.4.3</version>
+         </dependency>
+         <dependency>
+             <groupId>org.mybatis</groupId>
+             <artifactId>mybatis-spring</artifactId>
+             <version>1.2.4</version>
+         </dependency>
+         <dependency>
+             <groupId>com.alibaba</groupId>
+             <artifactId>druid</artifactId>
+             <version>1.1.2</version>
+         </dependency>
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-test</artifactId>
+             <version>1.5.6.RELEASE</version>
+         </dependency>
+         <dependency>
+             <groupId>org.mybatis</groupId>
+             <artifactId>mybatis</artifactId>
+             <version>3.2.7</version>
+         </dependency>
+         <dependency>
+             <groupId>com.yazuo.intelligent</groupId>
+             <artifactId>common</artifactId>
+             <version>1.0-SNAPSHOT</version>
+         </dependency>
+         <dependency>
+             <groupId>io.swagger</groupId>
+             <artifactId>swagger-annotations</artifactId>
+             <version>1.5.10</version>
          </dependency>
          <dependency>
              <groupId>io.springfox.ui</groupId>
@@ -42,6 +83,38 @@
              <version>1.2.40</version>
          </dependency>
          <dependency>
+             <groupId>com.aliyun.openservices</groupId>
+             <artifactId>ons-client</artifactId>
+             <version>1.7.0.Final</version>
+         </dependency>
+
+         <dependency>
+             <groupId>io.springfox</groupId>
+             <artifactId>springfox-swagger2</artifactId>
+             <version>2.6.1</version>
+             <exclusions>
+                 <exclusion>
+                     <groupId>org.springframework</groupId>
+                     <artifactId>spring-beans</artifactId>
+                 </exclusion>
+                 <exclusion>
+                     <groupId>org.springframework</groupId>
+                     <artifactId>spring-context</artifactId>
+                 </exclusion>
+                 <exclusion>
+                     <groupId>org.springframework</groupId>
+                     <artifactId>spring-aop</artifactId>
+                 </exclusion>
+             </exclusions>
+         </dependency>
+
+         <dependency>
+             <groupId>org.projectlombok</groupId>
+             <artifactId>lombok</artifactId>
+             <version>1.16.18</version>
+             <optional>true</optional>
+         </dependency>
+         <dependency>
              <groupId>org.apache.httpcomponents</groupId>
              <artifactId>httpclient</artifactId>
              <version>4.5.2</version>
@@ -55,6 +128,12 @@
              <groupId>com.yazuo.architecture</groupId>
              <artifactId>shutdown-starter</artifactId>
              <version>0.1-SNAPSHOT</version>
+         </dependency>
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-autoconfigure-processor</artifactId>
+             <optional>true</optional>
+             <version>1.5.2.RELEASE</version>
          </dependency>
      </dependencies>
  </dependencyManagement>
