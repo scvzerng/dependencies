@@ -9,89 +9,120 @@
     <version>CRM.S0</version>
     <packaging>pom</packaging>
     <description>小雅CRM非springboot依赖一管理</description>
+    <properties>
 
+        <spring.boot.version>1.5.6.RELEASE</spring.boot.version>
+
+        <fastjson.version>1.2.40</fastjson.version>
+
+        <swagger.spirngfox.version>2.6.1</swagger.spirngfox.version>
+        <swagger.annotation.version>1.5.10</swagger.annotation.version>
+        <swagger.ui.version>1.0.0</swagger.ui.version>
+
+        <yazuo.cloud.version>1.0-SNAPSHOT</yazuo.cloud.version>
+        <yazuo.shutdown.version>0.1-SNAPSHOT</yazuo.shutdown.version>
+        <yazuo.common.version>1.0-SNAPSHOT</yazuo.common.version>
+        <yazuo.swagger.version>1.0-SNAPSHOT</yazuo.swagger.version>
+        <yazuo.cache.version>1.0-SNAPSHOT</yazuo.cache.version>
+        <yazuo.log.version>1.1.2-SNAPSHOT</yazuo.log.version>
+
+        <pagehelper.version>5.1.2</pagehelper.version>
+        <postgresql.version>9.4-1204-jdbc41</postgresql.version>
+        <mapper.version>3.4.3</mapper.version>
+        <mybatis.spring.version>1.2.4</mybatis.spring.version>
+        <mybatis.version>3.2.7</mybatis.version>
+        <druid.version>1.1.2</druid.version>
+
+        <ons.client.version>1.7.0.Final</ons.client.version>
+
+        <lombok.version>1.16.18</lombok.version>
+
+        <httpclient.version>4.5.2</httpclient.version>
+
+
+    </properties>
     <dependencyManagement>
      <dependencies>
          <dependency>
              <groupId>com.github.pagehelper</groupId>
              <artifactId>pagehelper</artifactId>
-             <version>5.1.2</version>
+             <version>${pagehelper.version}</version>
          </dependency>
          <dependency>
              <groupId>org.postgresql</groupId>
              <artifactId>postgresql</artifactId>
-             <version>9.4-1204-jdbc41</version>
+             <version>${postgresql.version}</version>
          </dependency>
          <dependency>
              <groupId>tk.mybatis</groupId>
              <artifactId>mapper</artifactId>
-             <version>3.4.3</version>
+             <version>${mapper.version}</version>
          </dependency>
          <dependency>
              <groupId>org.mybatis</groupId>
              <artifactId>mybatis-spring</artifactId>
-             <version>1.2.4</version>
+             <version>${mybatis.spring.version}</version>
          </dependency>
          <dependency>
              <groupId>com.alibaba</groupId>
              <artifactId>druid</artifactId>
-             <version>1.1.2</version>
+             <version>${druid.version}</version>
          </dependency>
          <dependency>
              <groupId>org.springframework.boot</groupId>
              <artifactId>spring-boot-starter-test</artifactId>
-             <version>1.5.6.RELEASE</version>
+             <version>${spring.boot.version}</version>
          </dependency>
          <dependency>
              <groupId>org.mybatis</groupId>
              <artifactId>mybatis</artifactId>
-             <version>3.2.7</version>
+             <version>${mybatis.version}</version>
          </dependency>
          <dependency>
              <groupId>com.yazuo.intelligent</groupId>
              <artifactId>common</artifactId>
-             <version>1.0-SNAPSHOT</version>
+             <version>${yazuo.common.version}</version>
          </dependency>
          <dependency>
              <groupId>io.swagger</groupId>
              <artifactId>swagger-annotations</artifactId>
-             <version>1.5.10</version>
+             <version>${swagger.annotation.version}</version>
          </dependency>
          <dependency>
              <groupId>io.springfox.ui</groupId>
              <artifactId>springfox-swagger-ui-rfc6570</artifactId>
-             <version>1.0.0</version>
+             <version>${swagger.ui.version}</version>
          </dependency>
          <dependency>
              <groupId>com.yazuo.intelligent</groupId>
              <artifactId>swagger-starter</artifactId>
-             <version>1.0-SNAPSHOT</version>
+             <version>${yazuo.swagger.version}</version>
          </dependency>
          <dependency>
              <groupId>com.yazuo.intelligent</groupId>
              <artifactId>cache-starter</artifactId>
-             <version>1.0-SNAPSHOT</version>
+             <version>${yazuo.cache.version}</version>
          </dependency>
          <dependency>
              <groupId>com.yazuo.intelligent</groupId>
              <artifactId>logger-starter</artifactId>
-             <version>1.1.2-SNAPSHOT</version>
+             <version>${yazuo.log.version}</version>
          </dependency>
          <dependency>
              <groupId>com.alibaba</groupId>
              <artifactId>fastjson</artifactId>
-             <version>1.2.40</version>
+             <version>${fastjson.version}</version>
          </dependency>
          <dependency>
              <groupId>com.aliyun.openservices</groupId>
              <artifactId>ons-client</artifactId>
-             <version>1.7.0.Final</version>
+             <version>${ons.client.version}</version>
          </dependency>
 
          <dependency>
              <groupId>io.springfox</groupId>
              <artifactId>springfox-swagger2</artifactId>
-             <version>2.6.1</version>
+             <version>${swagger.spirngfox.version}</version>
              <exclusions>
                  <exclusion>
                      <groupId>org.springframework</groupId>
@@ -111,29 +142,29 @@
          <dependency>
              <groupId>org.projectlombok</groupId>
              <artifactId>lombok</artifactId>
-             <version>1.16.18</version>
+             <version>${lombok.version}</version>
              <optional>true</optional>
          </dependency>
          <dependency>
              <groupId>org.apache.httpcomponents</groupId>
              <artifactId>httpclient</artifactId>
-             <version>4.5.2</version>
+             <version>${httpclient.version}</version>
          </dependency>
          <dependency>
              <groupId>com.yazuo.intelligent</groupId>
              <artifactId>clound-bootstrap-starter</artifactId>
-             <version>1.0-SNAPSHOT</version>
+             <version>${yazuo.cloud.version}</version>
          </dependency>
          <dependency>
              <groupId>com.yazuo.architecture</groupId>
              <artifactId>shutdown-starter</artifactId>
-             <version>0.1-SNAPSHOT</version>
+             <version>${yazuo.shutdown.version}</version>
          </dependency>
          <dependency>
              <groupId>org.springframework.boot</groupId>
              <artifactId>spring-boot-autoconfigure-processor</artifactId>
              <optional>true</optional>
-             <version>1.5.2.RELEASE</version>
+             <version>${spring.boot.version}</version>
          </dependency>
      </dependencies>
  </dependencyManagement>
