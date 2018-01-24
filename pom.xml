@@ -152,7 +152,7 @@
          </dependency>
          <dependency>
              <groupId>com.zero.scvzerng</groupId>
-             <artifactId>clound-bootstrap-starter</artifactId>
+             <artifactId>cloud-bootstrap-starter</artifactId>
              <version>${cloud.version}</version>
          </dependency>
          <dependency>
