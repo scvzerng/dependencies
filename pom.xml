@@ -79,7 +79,7 @@
              <version>${mybatis.version}</version>
          </dependency>
          <dependency>
-             <groupId>com.intelligent</groupId>
+             <groupId>com.zero.scvzerng</groupId>
              <artifactId>common</artifactId>
              <version>${common.version}</version>
          </dependency>
@@ -94,17 +94,17 @@
              <version>${swagger.ui.version}</version>
          </dependency>
          <dependency>
-             <groupId>com.intelligent</groupId>
+             <groupId>com.zero.scvzerng</groupId>
              <artifactId>swagger-starter</artifactId>
              <version>${swagger.version}</version>
          </dependency>
          <dependency>
-             <groupId>com.intelligent</groupId>
+             <groupId>com.zero.scvzerng</groupId>
              <artifactId>cache-starter</artifactId>
              <version>${cache.version}</version>
          </dependency>
          <dependency>
-             <groupId>com.intelligent</groupId>
+             <groupId>com.zero.scvzerng</groupId>
              <artifactId>logger-starter</artifactId>
              <version>${log.version}</version>
          </dependency>
@@ -151,13 +151,13 @@
              <version>${httpclient.version}</version>
          </dependency>
          <dependency>
-             <groupId>com.intelligent</groupId>
+             <groupId>com.zero.scvzerng</groupId>
              <artifactId>clound-bootstrap-starter</artifactId>
              <version>${cloud.version}</version>
          </dependency>
          <dependency>
-             <groupId>com.architecture</groupId>
-             <artifactId>shutdown-starter</artifactId>
+             <groupId>com.zero.scvzerng</groupId>
+             <artifactId>eureka-shutdown-starter</artifactId>
              <version>${shutdown.version}</version>
          </dependency>
          <dependency>
