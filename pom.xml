@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yazuo.intelligent</groupId>
+    <groupId>com.zero.scvzerng</groupId>
     <artifactId>dependencies</artifactId>
-    <version>CRM.S0</version>
+    <version>SCVZERNG.S0</version>
     <packaging>pom</packaging>
-    <description>小雅CRM非springboot依赖一管理</description>
+    <description>统一依赖管理</description>
     <properties>
 
         <spring.boot.version>1.5.6.RELEASE</spring.boot.version>
@@ -19,12 +19,12 @@
         <swagger.annotation.version>1.5.10</swagger.annotation.version>
         <swagger.ui.version>1.0.0</swagger.ui.version>
 
-        <yazuo.cloud.version>1.0-SNAPSHOT</yazuo.cloud.version>
-        <yazuo.shutdown.version>0.1-SNAPSHOT</yazuo.shutdown.version>
-        <yazuo.common.version>1.0-SNAPSHOT</yazuo.common.version>
-        <yazuo.swagger.version>1.0-SNAPSHOT</yazuo.swagger.version>
-        <yazuo.cache.version>1.0-SNAPSHOT</yazuo.cache.version>
-        <yazuo.log.version>1.1.2-SNAPSHOT</yazuo.log.version>
+        <cloud.version>1.0-SNAPSHOT</cloud.version>
+        <shutdown.version>0.1-SNAPSHOT</shutdown.version>
+        <common.version>1.0-SNAPSHOT</common.version>
+        <swagger.version>1.0-SNAPSHOT</swagger.version>
+        <cache.version>1.0-SNAPSHOT</cache.version>
+        <log.version>1.1.2-SNAPSHOT</log.version>
 
         <pagehelper.version>5.1.2</pagehelper.version>
         <postgresql.version>9.4-1204-jdbc41</postgresql.version>
@@ -79,9 +79,9 @@
              <version>${mybatis.version}</version>
          </dependency>
          <dependency>
-             <groupId>com.yazuo.intelligent</groupId>
+             <groupId>com.intelligent</groupId>
              <artifactId>common</artifactId>
-             <version>${yazuo.common.version}</version>
+             <version>${common.version}</version>
          </dependency>
          <dependency>
              <groupId>io.swagger</groupId>
@@ -94,19 +94,19 @@
              <version>${swagger.ui.version}</version>
          </dependency>
          <dependency>
-             <groupId>com.yazuo.intelligent</groupId>
+             <groupId>com.intelligent</groupId>
              <artifactId>swagger-starter</artifactId>
-             <version>${yazuo.swagger.version}</version>
+             <version>${swagger.version}</version>
          </dependency>
          <dependency>
-             <groupId>com.yazuo.intelligent</groupId>
+             <groupId>com.intelligent</groupId>
              <artifactId>cache-starter</artifactId>
-             <version>${yazuo.cache.version}</version>
+             <version>${cache.version}</version>
          </dependency>
          <dependency>
-             <groupId>com.yazuo.intelligent</groupId>
+             <groupId>com.intelligent</groupId>
              <artifactId>logger-starter</artifactId>
-             <version>${yazuo.log.version}</version>
+             <version>${log.version}</version>
          </dependency>
          <dependency>
              <groupId>com.alibaba</groupId>
@@ -151,14 +151,14 @@
              <version>${httpclient.version}</version>
          </dependency>
          <dependency>
-             <groupId>com.yazuo.intelligent</groupId>
+             <groupId>com.intelligent</groupId>
              <artifactId>clound-bootstrap-starter</artifactId>
-             <version>${yazuo.cloud.version}</version>
+             <version>${cloud.version}</version>
          </dependency>
          <dependency>
-             <groupId>com.yazuo.architecture</groupId>
+             <groupId>com.architecture</groupId>
              <artifactId>shutdown-starter</artifactId>
-             <version>${yazuo.shutdown.version}</version>
+             <version>${shutdown.version}</version>
          </dependency>
          <dependency>
              <groupId>org.springframework.boot</groupId>
@@ -174,32 +174,5 @@
             <id>aliyun</id>
             <url>http://maven.aliyun.com/nexus/content/groups/public</url>
         </repository>
-        <repository>
-            <id>nexus</id>
-            <url>http://nexus.yazuosoft.com/nexus/content/groups/public-all/</url>
-        </repository>
-        <repository>
-            <id>releases</id>
-            <url>http://nexus.yazuosoft.com/nexus/content/repositories/releases</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-        <repository>
-            <id>Snapshots</id>
-            <url>http://nexus.yazuosoft.com/nexus/content/repositories/snapshots</url>
-        </repository>
     </repositories>
-    <distributionManagement>
-        <repository>
-            <id>releases</id>
-            <name>Internal Releases</name>
-            <url>http://nexus.yazuosoft.com/nexus/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>Snapshots</id>
-            <name>Internal Snapshots</name>
-            <url>http://nexus.yazuosoft.com/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
 </project>
